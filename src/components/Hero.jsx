@@ -141,24 +141,24 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>A</b>MING
+          R<b>E</b>P<b>U</b>BLI<b>c</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              redefi<b>n</b>e
+              odes<b>y</b>ee
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+              Step Into the Republic <br /> Unleash Your Roleplay Legacy
             </p>
 
             <Button
               id="watch-trailer"
-              title="Watch trailer"
+              title="Apply Now"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
+              containerClass="bg-red-600 flex-center gap-1 text-white hover:bg-red-700 hover:text-red-100 transition-all duration-300 ease-in-out"
             />
           </div>
         </div>

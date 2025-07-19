@@ -102,14 +102,12 @@ const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
-        </p>
+      <p className="font-circular-web text-lg text-blue-50">
+        Beyond the Game, a Republic Awaits
+      </p>
+      <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+        Odesyee blurs the line between fiction and reality—step into a persistent world where stories unfold in real time, driven by you.
+      </p>
       </div>
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
@@ -117,10 +115,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              <b>O</b>pti<b>M</b>ized <b>P</b>erf<b>O</b>rm<b>a</b>n<b>c</b>e  
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Built for speed and stability — delivering smooth FiveM experiences with zero compromise on performance."
           isComingSoon
         />
       </BentoTilt>
@@ -131,10 +129,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                1000 + c<b>u</b>s<b>T</b>om <b>v</b>ehicles  
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="A vast fleet of unique, anime-inspired rides crafted for immersive open-world adventures."
             isComingSoon
           />
         </BentoTilt>
@@ -144,10 +142,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                <b>C</b>us<b>t</b><b>o</b>m <b>C</b>on<b>t</b>en<b>t</b>  
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Dive into a world of handcrafted content — custom vehicles, scripts, and environments you won’t find anywhere else."
             isComingSoon
           />
         </BentoTilt>
@@ -157,16 +155,16 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                <b>ACt</b>ive <b>C</b>omm<b>u</b>ni<b>t</b>y
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Stay connected with a buzzing player base, dedicated staff, and nonstop in-game action."
             isComingSoon
           />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-red-500 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
               M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
             </h1>

@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -12,10 +13,25 @@ function App() {
       <NavBar />
       <Hero />
       <About />
-      <Features />
-      <Story />
-      <Contact />
+
+      <section id="features">
+        <Features />
+      </section>
+
+      <section id="highlights">
+        <Story />
+      </section>
+
+      <section id="team">
+        <Team />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
       <Footer />
+
     </main>
   );
 }
