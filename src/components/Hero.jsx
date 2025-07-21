@@ -16,7 +16,7 @@ const Hero = () => {
   const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
-  const totalVideos = 4;
+  const totalVideos = 3;
   const nextVdRef = useRef(null);
 
   const handleVideoLoad = () => {
@@ -85,8 +85,7 @@ const Hero = () => {
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
+        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-white">
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -97,7 +96,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-white"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -140,14 +139,14 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          R<b>E</b>P<b>U</b>BLI<b>c</b>
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-white">
+          R<b>o</b>l<b>e</b>pla<b>y</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              odes<b>y</b>ee
+              ode<b>y</b>see
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
@@ -158,14 +157,14 @@ const Hero = () => {
               id="watch-trailer"
               title="Apply Now"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-red-600 flex-center gap-1 text-white hover:bg-red-700 hover:text-red-100 transition-all duration-300 ease-in-out"
+              containerClass="bg-red-600 flex-center gap-1 text-white hover:bg-red-800 hover:text-red-100 transition-all duration-300 ease-in-out"
             />
           </div>
         </div>
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b>A</b>MING
+        R<b>o</b>l<b>e</b>pla<b>y</b>
       </h1>
     </div>
   );

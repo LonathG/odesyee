@@ -86,11 +86,11 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
               style={{
                 opacity: hoverOpacity,
-                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
+                background: `radial-gradient(120px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #ff4d4daa, transparent 80%)`,
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">Try now</p>
           </div>
         )}
       </div>
@@ -152,7 +152,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="videos/hero-3.mp4"
             title={
               <>
                 <b>ACt</b>ive <b>C</b>omm<b>u</b>ni<b>t</b>y
@@ -175,7 +175,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <video
-            src="videos/feature-5.mp4"
+            src="videos/hero-1.mp4"
             loop
             muted
             autoPlay

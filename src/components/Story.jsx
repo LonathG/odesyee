@@ -1,49 +1,80 @@
 import gsap from "gsap";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
 
+const images = [
+  "/img/highlight-1.jpeg",
+  "/img/highlight-2.jpeg",
+  "/img/highlight-3.jpeg",
+];
 const FloatingImage = () => {
   const frameRef = useRef(null);
+  const [currentImage, setCurrentImage] = useState(0);
 
+  // Rotate effect
   const handleMouseMove = (e) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
-
     if (!element) return;
 
     const rect = element.getBoundingClientRect();
-    const xPos = clientX - rect.left;
-    const yPos = clientY - rect.top;
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
 
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = ((yPos - centerY) / centerY) * -10;
-    const rotateY = ((xPos - centerX) / centerX) * 10;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
 
     gsap.to(element, {
       duration: 0.3,
       rotateX,
       rotateY,
-      transformPerspective: 500,
-      ease: "power1.inOut",
+      transformPerspective: 800,
+      transformOrigin: "center",
+      ease: "power2.out",
     });
   };
 
   const handleMouseLeave = () => {
     const element = frameRef.current;
-
     if (element) {
       gsap.to(element, {
         duration: 0.3,
         rotateX: 0,
         rotateY: 0,
-        ease: "power1.inOut",
+        ease: "power2.out",
       });
     }
   };
+
+  // Slideshow logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (currentImage + 1) % images.length;
+
+      if (frameRef.current) {
+        gsap.to(frameRef.current, {
+          opacity: 0,
+          duration: 0.5,
+          ease: "power2.inOut",
+          onComplete: () => {
+            setCurrentImage(nextIndex);
+            gsap.to(frameRef.current, {
+              opacity: 1,
+              duration: 0.5,
+              ease: "power2.inOut",
+            });
+          },
+        });
+      }
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [currentImage]);
 
   return (
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
@@ -67,36 +98,24 @@ const FloatingImage = () => {
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/highlight.jpg"
-                  alt="entrance.webp"
-                  className="object-contain"
+                  src={images[currentImage]}
+                  alt="highlight"
+                  className="object-contain filter-[url(#flt_tag)]"
                 />
               </div>
             </div>
 
-            {/* for the rounded corner */}
-            <svg
-              className="invisible absolute size-0"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="absolute w-0 h-0" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="flt_tag">
-                  <feGaussianBlur
-                    in="SourceGraphic"
-                    stdDeviation="8"
-                    result="blur"
-                  />
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
                   <feColorMatrix
                     in="blur"
                     mode="matrix"
                     values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
                     result="flt_tag"
                   />
-                  <feComposite
-                    in="SourceGraphic"
-                    in2="flt_tag"
-                    operator="atop"
-                  />
+                  <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
                 </filter>
               </defs>
             </svg>
@@ -107,15 +126,10 @@ const FloatingImage = () => {
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Where power shifts and streets speak, Odesyee rises.
-              Navigate the chaos, rise through factions, and build 
-              your legacy in the republic that writes itself.
+              Navigate the chaos, rise through factions, and build your legacy in the republic that writes itself.
             </p>
 
-            <Button
-              id="realm-btn"
-              title="discover prologue"
-              containerClass="mt-5"
-            />
+            <Button id="realm-btn" title="discover prologue" containerClass="mt-5" />
           </div>
         </div>
       </div>

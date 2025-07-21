@@ -53,7 +53,7 @@ export default function Team() {
   }, []);
 
   return (
-    <section className="h-[70vh] py-28 bg-gray-900 text-white text-center">
+    <section className="h-[70vh] py-28 bg-black text-white text-center">
       <div ref={containerRef} className="max-w-4xl mx-auto">
         {/* Thumbnails with animation */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
