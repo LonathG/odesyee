@@ -121,8 +121,8 @@ const FloatingImage = () => {
             </svg>
           </div>
         </div>
-
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+{/* 
+      <div className="mt-10 flex w-full justify-end px-6 md:mt-16 md:px-24">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Where power shifts and streets speak, Odesyee rises.
@@ -131,7 +131,7 @@ const FloatingImage = () => {
 
             <Button id="realm-btn" title="discover prologue" containerClass="mt-5" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
