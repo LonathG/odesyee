@@ -105,7 +105,7 @@ const Features = () => (
       <p className="font-circular-web text-lg text-blue-50">
         Beyond the Game, a Republic Awaits
       </p>
-      <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+      <p className="max-w-md font-circular-web text-lg text-white opacity-50">
         Odesyee blurs the line between fiction and reality—step into a persistent world where stories unfold in real time, driven by you.
       </p>
       </div>
