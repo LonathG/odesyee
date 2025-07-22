@@ -153,12 +153,19 @@ const Hero = () => {
               Step Into the Republic <br /> Unleash Your Roleplay Legacy
             </p>
 
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfaFxg272wonHxSW8CZp7eGNRUzMzIyhMft7OWfqwkVOryqqg/viewform" // ← change this to your actual link
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               id="watch-trailer"
               title="Apply Now"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-red-600 flex-center gap-1 text-white hover:bg-red-800 hover:text-red-100 transition-all duration-300 ease-in-out"
+              containerClass="bg-red-700 flex-center gap-1 text-white hover:bg-red-800 hover:text-red-100 transition-all duration-300 ease-in-out"
             />
+          </a>
+
           </div>
         </div>
       </div>

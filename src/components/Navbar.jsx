@@ -73,12 +73,18 @@ const NavBar = () => {
           <div className="flex items-center gap-7">
             <img src="/logo.png" alt="logo" className="w-10" />
 
+          <a
+            href="https://discord.gg/fvDTxbFy8e" 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               id="product-button"
               rightIcon={<TiLocationArrow />}
               title="Join Odeysee"
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
+          </a>
           </div>
 
           {/* Navigation Links and Audio Button */}

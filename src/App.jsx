@@ -21,10 +21,10 @@ function App() {
       <section id="highlights">
         <Story />
       </section>
-
+{/* 
       <section id="team">
         <Team />
-      </section>
+      </section> */}
 
       <section id="contact">
         <Contact />

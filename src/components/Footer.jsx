@@ -48,7 +48,7 @@ const Footer = () => {
         ref={headingRef}
         className="text-[30vw] special-font text-white text-center w-full select-none hover:box-shadow-lg transition-all duration-300 ease-in-ease-out"
       >
-      <div style={{position: 'relative', height: '400px'}}>
+      <div style={{position: 'relative', height: '400px', zIndex:100}}>
         <TextPressure
           text="Odeysee"
           flex={true}
@@ -60,6 +60,7 @@ const Footer = () => {
           textColor="#ffffff"
           strokeColor="#ff0000"
           minFontSize={36}
+          zIndex={10}
         />
       </div>
       </h1>
@@ -67,7 +68,7 @@ const Footer = () => {
 
 
       {/* Footer Links */}
-      <div className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-white">
+      <div className="mt-20 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-white z-200">
         {/* Logo */}
         <div className="col-span-1 flex items-start">
           <img
@@ -89,7 +90,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Products */}
+        {/* Products
         <div>
           <h4 className="mb-2 uppercase text-xs text-white/70">Products</h4>
           <ul className="space-y-1">
@@ -98,16 +99,16 @@ const Footer = () => {
             <li><a href="#" className="hover:underline">Zigma</a></li>
             <li><a href="#" className="hover:underline">Azul</a></li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Follow Us */}
         <div>
           <h4 className="mb-2 uppercase text-xs text-white/70">Follow Us</h4>
           <ul className="space-y-1">
             <li><a href="#" className="hover:underline">Discord</a></li>
-            <li><a href="#" className="hover:underline">X</a></li>
             <li><a href="#" className="hover:underline">YouTube</a></li>
-            <li><a href="#" className="hover:underline">Medium</a></li>
+            <li><a href="#" className="hover:underline">Facebook</a></li>
+            <li><a href="#" className="hover:underline">Tiktok</a></li>
           </ul>
         </div>
 
@@ -115,7 +116,7 @@ const Footer = () => {
         <div>
           <h4 className="mb-2 uppercase text-xs text-white/70">Resources</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:underline">Media Kit</a></li>
+            <li><a href="https://docs.google.com/document/d/1R5MxRMMtItdLgA5XZN5LsW_P21Su5OwNV5UFLPrWSzo/edit?tab=t.43v6okmqsbsl#heading=h.2jxokqu5i98w" className="hover:underline">FiveM Rules</a></li>
           </ul>
         </div>
       </div>
