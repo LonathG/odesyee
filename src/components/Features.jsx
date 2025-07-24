@@ -160,7 +160,9 @@ const Features = () => (
             }
             description="Stay connected with a buzzing player base, dedicated staff, and nonstop in-game action."
             isComingSoon
+            className="shadow-xl hover:shadow-2xl transition-shadow duration-300"
           />
+
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">

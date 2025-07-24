@@ -83,11 +83,12 @@ const Footer = () => {
         <div>
           <h4 className="mb-2 uppercase text-xs text-white/70">Explore</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:underline">Features</a></li>
-            <li><a href="#" className="hover:underline">Highlights</a></li>
-            <li><a href="#" className="hover:underline">Team</a></li>
-            <li><a href="#" className="hover:underline">Contact</a></li>
+            <li><a href="#features" className="hover:underline">Features</a></li>
+            <li><a href="#highlights" className="hover:underline">Highlights</a></li>
+            <li><a href="#team" className="hover:underline">Team</a></li>
+            <li><a href="#contact" className="hover:underline">Contact</a></li>
           </ul>
+
         </div>
 
         {/* Products
