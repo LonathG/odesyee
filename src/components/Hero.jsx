@@ -96,7 +96,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-white"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -162,7 +162,7 @@ const Hero = () => {
               id="watch-trailer"
               title="Apply Now"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-red-700 flex-center gap-1 text-white hover:bg-red-800 hover:text-red-100 transition-all duration-300 ease-in-out"
+              containerClass="bg-red-600 flex-center gap-1 text-white hover:bg-red-800 hover:text-red-100 transition-all duration-300 ease-in-out"
             />
           </a>
 
