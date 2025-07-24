@@ -116,9 +116,19 @@ const Footer = () => {
         <div>
           <h4 className="mb-2 uppercase text-xs text-white/70">Resources</h4>
           <ul className="space-y-1">
-            <li><a href="https://docs.google.com/document/d/1R5MxRMMtItdLgA5XZN5LsW_P21Su5OwNV5UFLPrWSzo/edit?tab=t.43v6okmqsbsl#heading=h.2jxokqu5i98w" className="hover:underline">FiveM Rules</a></li>
+            <li>
+              <a 
+                href="https://docs.google.com/document/d/1R5MxRMMtItdLgA5XZN5LsW_P21Su5OwNV5UFLPrWSzo/edit?tab=t.43v6okmqsbsl#heading=h.2jxokqu5i98w" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:underline"
+              >
+                FiveM Rules
+              </a>
+            </li>
           </ul>
         </div>
+        
       </div>
 
       {/* Bottom Strip */}
